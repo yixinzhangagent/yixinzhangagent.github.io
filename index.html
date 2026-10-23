@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yixin Zhang (张益新) — Academic Homepage | Research Scientist &amp; ML GDE</title>
+  <meta name="description" content="Academic homepage of Yixin Zhang (张益新), Research Scientist at Yuansiwujie and Google Developer Expert in Machine Learning. Research in Clinical AI &amp; Biomedical Reasoning Agents (CureAgent, NeurIPS 2025 CURE-Bench 2nd Place), Real-Time Full-Duplex Conversational Agents, and Embodied AI &amp; Humanoid Robotics Sim-to-Real Harnesses." />
+  <meta name="author" content="Yixin Zhang (张益新)" />
+  <meta name="keywords" content="Yixin Zhang, 张益新, CureAgent, CURE-Bench, NeurIPS 2025, Clinical AI, Multi-Agent Systems, Proactive Turn-Taking, Transition Relevance Place, Full-Duplex Voice Agent, Embodied AI, Unitree G1, Sim-to-Real, Evaluation Harness, Google Developer Expert, Yuansiwujie" />
+
+  <!-- Canonical & OpenGraph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Yixin Zhang (张益新) — Research Scientist · Google Developer Expert (ML)" />
+  <meta property="og:description" content="Research Scientist at Yuansiwujie &amp; Google Developer Expert (ML). Co-author of CureAgent (arXiv:2512.05576, 2nd Place in CURE-Bench Track 2 at NeurIPS 2025)." />
+  <meta property="profile:first_name" content="Yixin" />
+  <meta property="profile:last_name" content="Zhang" />
+  <meta property="profile:username" content="June01" />
+
+  <!-- Google Scholar / Highwire Press Citation Meta Tags -->
+  <meta name="citation_title" content="CureAgent: A Training-Free Executor-Analyst Framework for Clinical Reasoning" />
+  <meta name="citation_author" content="Xie, Ting-Ting" />
+  <meta name="citation_author" content="Zhang, Yixin" />
+  <meta name="citation_author_orcid" content="0009-0004-7641-4450" />
+  <meta name="citation_author_institution" content="Yuansiwujie" />
+  <meta name="citation_publication_date" content="2025/12/05" />
+  <meta name="citation_arxiv_id" content="2512.05576" />
+  <meta name="citation_doi" content="10.48550/arXiv.2512.05576" />
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2512.05576.pdf" />
+
+  <!-- Schema.org JSON-LD for Academic Entity Disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://orcid.org/0009-0004-7641-4450",
+    "name": "Yixin Zhang",
+    "alternateName": ["张益新", "Zhang, Yixin", "June01", "updatezhang", "update0909"],
+    "jobTitle": "Research Scientist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Yuansiwujie"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Beijing",
+      "addressCountry": "CN"
+    },
+    "email": "mailto:zyxcambridge@gmail.com",
+    "award": [
+      "2nd Place in CURE-Bench Track 2 at NeurIPS 2025",
+      "Google Developer Expert (GDE) in Machine Learning"
+    ],
+    "knowsAbout": [
+      "Clinical AI & Biomedical Reasoning Agents",
+      "Multi-Agent Systems",
+      "Real-Time Full-Duplex Conversational Agents",
+      "Proactive Turn-Taking at Transition Relevance Places",
+      "Embodied AI & Humanoid Robotics Sim-to-Real",
+      "Deterministic Agent Evaluation Harnesses",
+      "Heterogeneous Computing & Edge Inference"
+    ],
+    "sameAs": [
+      "https://orcid.org/0009-0004-7641-4450",
+      "https://www.semanticscholar.org/author/Yixin-Zhang/2397424547",
+      "https://huggingface.co/update0909",
+      "https://huggingface.co/papers/2512.05576",
+      "https://arxiv.org/abs/2512.05576",
+      "https://doi.org/10.48550/arXiv.2512.05576",
+      "https://github.com/June01",
+      "https://github.com/zyxcambridge",
+      "https://g.dev/updatezhang"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Sticky Navigation (al-folio style) -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-title">
+        <span class="brand-name-en">Yixin Zhang</span>
+        <span class="brand-name-zh">张益新</span>
+        <span class="brand-orcid-pill" title="Verified ORCID iD">ORCID: 0009-0004-7641-4450</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="#about">
+              <span data-lang="en">About</span>
+              <span data-lang="zh">学术简介</span>
+            </a>
+          </li>
+          <li>
+            <a href="#pillars">
+              <span data-lang="en">Research</span>
+              <span data-lang="zh">研究方向</span>
+            </a>
+          </li>
+          <li>
+            <a href="#publications">
+              <span data-lang="en">Publications</span>
+              <span data-lang="zh">代表论文</span>
+            </a>
+          </li>
+          <li>
+            <a href="#benchmarks">
+              <span data-lang="en">Benchmarks &amp; Artifacts</span>
+              <span data-lang="zh">开源基准与套件</span>
+            </a>
+          </li>
+          <li>
+            <a href="#identity">
+              <span data-lang="en">Academic ID</span>
+              <span data-lang="zh">学术身份矩阵</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-controls">
+          <button type="button" id="lang-toggle" class="control-btn lang-btn" aria-label="Toggle Language (EN/中文)" title="Switch between English and Chinese">
+            <span class="lang-indicator" id="lang-indicator-text">中文</span>
+          </button>
+          <button type="button" id="theme-toggle" class="control-btn theme-btn" aria-label="Toggle Dark/Light Theme" title="Toggle Dark/Light Mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- Hero / Profile Header & Verified Academic Identity Matrix -->
+    <section class="profile-hero" id="about">
+      <div class="profile-grid">
+        <!-- Left Sidebar: Avatar Monogram + Core Metadata -->
+        <aside class="profile-sidebar">
+          <div class="avatar-card">
+            <div class="avatar-monogram" aria-hidden="true">
+              <span class="monogram-letters">YZ</span>
+              <span class="monogram-sub">张益新</span>
+            </div>
+            <div class="verified-status">
+              <span class="status-dot"></span>
+              <span data-lang="en">Verified Researcher Profile</span>
+              <span data-lang="zh">已认证学者档案</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <span data-lang="en">Beijing, China</span>
+                <span data-lang="zh">中国 · 北京 (Beijing, China)</span>
+              </div>
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:zyxcambridge@gmail.com" class="email-link">zyxcambridge@gmail.com</a>
+              <button type="button" class="copy-inline-btn" data-copy="zyxcambridge@gmail.com" title="Copy Email">
+                <span data-lang="en">Copy</span>
+                <span data-lang="zh">复制</span>
+              </button>
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+              <div>
+                <span data-lang="en">Yuansiwujie · ML GDE</span>
+                <span data-lang="zh">元思无界 (Yuansiwujie) · 谷歌机器学习专家</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-actions-card">
+            <a href="citations.bib" download="Yixin_Zhang_Citations.bib" class="action-pill-btn full-width">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-lang="en">Download All Citations (.bib)</span>
+              <span data-lang="zh">下载全部引用文件 (citations.bib)</span>
+            </a>
+          </div>
+        </aside>
+
+        <!-- Right Main Bio & Verified Badges -->
+        <div class="profile-main">
+          <div class="identity-header">
+            <div class="honor-eyebrow">
+              <span class="award-badge-inline">
+                🏆 <span data-lang="en">NeurIPS 2025 CURE-Bench Track 2 — 2nd Place Winner</span>
+                <span data-lang="zh">NeurIPS 2025 CURE-Bench 赛道二全球亚军 (2nd Place)</span>
+              </span>
+              <span class="gde-badge-inline">
+                ✦ <span data-lang="en">Google Developer Expert (Machine Learning)</span>
+                <span data-lang="zh">Google 开发者专家 (Machine Learning GDE)</span>
+              </span>
+            </div>
+
+            <h1 class="researcher-name">
+              Yixin Zhang <span class="name-cjk">(张益新)</span>
+            </h1>
+
+            <p class="researcher-title">
+              <span data-lang="en">Research Scientist at <strong>Yuansiwujie</strong> &middot; <strong>Google Developer Expert (Machine Learning)</strong></span>
+              <span data-lang="zh"><strong>元思无界 (Yuansiwujie)</strong> 研究科学家 (Research Scientist) &middot; <strong>Google 机器学习开发者专家 (ML GDE)</strong></span>
+            </p>
+          </div>
+
+          <!-- Interactive Verified Academic Badges Matrix -->
+          <div class="verified-badges-section" aria-label="Verified Academic Identity Links">
+            <div class="badges-label">
+              <span data-lang="en">Verified Academic Identity Matrix</span>
+              <span data-lang="zh">权威学术身份认证矩阵 (Verified Academic Identifiers)</span>
+            </div>
+            <div class="verified-badges-grid">
+              <!-- ORCID -->
+              <a href="https://orcid.org/0009-0004-7641-4450" target="_blank" rel="noopener noreferrer" class="verified-badge badge-orcid" title="Verified ORCID iD: 0009-0004-7641-4450">
+                <span class="badge-icon" aria-hidden="true">iD</span>
+                <span class="badge-body">
+                  <span class="badge-platform">ORCID</span>
+                  <span class="badge-id">0009-0004-7641-4450</span>
+                </span>
+              </a>
+
+              <!-- Semantic Scholar -->
+              <a href="https://www.semanticscholar.org/author/Yixin-Zhang/2397424547" target="_blank" rel="noopener noreferrer" class="verified-badge badge-s2" title="Semantic Scholar Author ID: 2397424547">
+                <span class="badge-icon" aria-hidden="true">S2</span>
+                <span class="badge-body">
+                  <span class="badge-platform">Semantic Scholar</span>
+                  <span class="badge-id">Author #2397424547</span>
+                </span>
+              </a>
+
+              <!-- arXiv -->
+              <a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener noreferrer" class="verified-badge badge-arxiv" title="arXiv Preprint: 2512.05576">
+                <span class="badge-icon" aria-hidden="true">arXiv</span>
+                <span class="badge-body">
+                  <span class="badge-platform">arXiv.org</span>
+                  <span class="badge-id">2512.05576</span>
+                </span>
+              </a>
+
+              <!-- Hugging Face Profile -->
+              <a href="https://huggingface.co/update0909" target="_blank" rel="noopener noreferrer" class="verified-badge badge-hf" title="Hugging Face Researcher Profile: @update0909">
+                <span class="badge-icon" aria-hidden="true">🤗</span>
+                <span class="badge-body">
+                  <span class="badge-platform">Hugging Face</span>
+                  <span class="badge-id">@update0909</span>
+                </span>
+              </a>
+
+              <!-- Hugging Face Paper Page -->
+              <a href="https://huggingface.co/papers/2512.05576" target="_blank" rel="noopener noreferrer" class="verified-badge badge-hf-paper" title="Hugging Face Daily Papers: 2512.05576">
+                <span class="badge-icon" aria-hidden="true">📄</span>
+                <span class="badge-body">
+                  <span class="badge-platform">HF Papers</span>
+                  <span class="badge-id">papers/2512.05576</span>
+                </span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/June01" target="_blank" rel="noopener noreferrer" class="verified-badge badge-github" title="GitHub Research Repositories: @June01">
+                <span class="badge-icon" aria-hidden="true">GH</span>
+                <span class="badge-body">
+                  <span class="badge-platform">GitHub</span>
+                  <span class="badge-id">@June01</span>
+                </span>
+              </a>
+
+              <!-- Google Developer Expert -->
+              <a href="https://g.dev/updatezhang" target="_blank" rel="noopener noreferrer" class="verified-badge badge-gde" title="Official Google Developer Expert Profile: g.dev/updatezhang">
+                <span class="badge-icon" aria-hidden="true">GDE</span>
+                <span class="badge-body">
+                  <span class="badge-platform">Google Dev Expert</span>
+                  <span class="badge-id">g.dev/updatezhang</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Biography Narrative -->
+          <div class="bio-prose">
+            <div data-lang="en">
+              <p>
+                <strong>Yixin Zhang (张益新)</strong> is a Research Scientist at <strong>Yuansiwujie</strong> (Beijing, China) and a <strong>Google Developer Expert (GDE) in Machine Learning</strong>. Combining over eight years of high-reliability heterogeneous computing and automotive-grade AI systems engineering (Aptiv, Innovusion, Snowlake) with frontier agentic AI research, his work bridges probabilistic foundation models and deterministic, safety-critical execution environments.
+              </p>
+              <p>
+                His research investigates how autonomous agents reason over expansive tool ecosystems, coordinate conversational turn-taking in real time, and transfer learned policies reliably from simulation to physical humanoid hardware. He is the co-author of <em>CureAgent: A Training-Free Executor-Analyst Framework for Clinical Reasoning</em> (<a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener">arXiv:2512.05576</a>), which won <strong>2nd Place in the CURE-Bench Competition (Track 2) at NeurIPS 2025</strong> across 211 biomedical tools.
+              </p>
+            </div>
+
+            <div data-lang="zh">
+              <p>
+                <strong>张益新 (Yixin Zhang)</strong>，现任<strong>元思无界 (Yuansiwujie)</strong> 研究科学家（中国北京），同时担任 <strong>Google 机器学习开发者专家 (Google Developer Expert in Machine Learning)</strong>。他拥有超过 8 年的异构计算（C++/CUDA/FPGA/SoC）与车规级高可靠 AI 系统工程经验（曾任安波福 Aptiv、图达通 Innovusion、雪湖科技核心算法与架构负责人），致力于将工业级确定性验证体系引入前沿智能体（AI Agents）与具身智能系统研究。
+              </p>
+              <p>
+                他的核心研究聚焦于：智能体在超大规模工具空间中的免训练认知解耦推理、实时全双工语音对话智能体在话轮转换关联点（TRP）的主动交互机制，以及人形机器人（Unitree G1）从仿真到真机（Sim-to-Real）的确定性评测线束与四层无责归因体系。他是临床推理多智能体框架 <em>CureAgent</em>（<a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener">arXiv:2512.05576</a>）的共同作者，该工作在 <strong>NeurIPS 2025 CURE-Bench 国际临床推理竞赛 Track 2 中斩获全球第 2 名（亚军）</strong>。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Pillars Section -->
+    <section class="section-block" id="pillars">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span data-lang="en">Core Research Pillars</span>
+          <span data-lang="zh">三大核心研究支柱 (Research Pillars)</span>
+        </h2>
+        <p class="section-subtitle">
+          <span data-lang="en">Decoupling high-level cognitive reasoning from deterministic low-level execution across biomedical, conversational, and physical agent domains.</span>
+          <span data-lang="zh">跨生物医学推理、实时全双工语音交互与具身人形机器人的系统级认知解耦与确定性评测架构。</span>
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1: Clinical AI & Biomedical Reasoning Agents -->
+        <article class="pillar-card">
+          <div class="pillar-number">01</div>
+          <h3 class="pillar-title">
+            <span data-lang="en">Clinical AI &amp; Biomedical Reasoning Agents</span>
+            <span data-lang="zh">临床 AI 与生物医学推理智能体</span>
+          </h3>
+          <div class="pillar-body" data-lang="en">
+            <p>
+              Designing <strong>training-free Executor-Analyst architectures</strong> that decouple schema-bound tool execution from high-level clinical synthesis. Rather than exposing a monolithic LLM to long-horizon context drift (>12k tokens) across hundreds of noisy API definitions, the <em>Executor</em> performs strict atomic tool calls while the <em>Analyst</em> operates exclusively over compact, structured factual evidence.
+            </p>
+            <ul class="pillar-list">
+              <li><strong>Stratified Multi-Agent Ensemble Reasoning:</strong> Combining complementary tool-augmented trajectories with internal parametric knowledge to mitigate single-path hallucination.</li>
+              <li><strong>Biomedical Tool Orchestration (211 Tools):</strong> High-precision retrieval and verification across <code>PubMed</code>, <code>OpenFDA</code>, <code>ChEMBL</code>, and <code>ClinicalTrials.gov</code> for complex therapeutic and regulatory decision-making.</li>
+            </ul>
+          </div>
+          <div class="pillar-body" data-lang="zh">
+            <p>
+              构建<strong>免训练的执行器-分析器（Executor-Analyst）解耦架构</strong>，将底层的严格工具调用与高层临床证据综合完全隔离。通过识别并消除超长上下文（&gt;12k tokens）下的注意力漂移（Attention Drift），由短上下文 <em>Executor</em> 负责原子级 API 校验与容错调用，由 <em>Analyst</em> 基于高信噪比结构化事实卡片完成高阶医学推理。
+            </p>
+            <ul class="pillar-list">
+              <li><strong>分层多智能体集成推理（Stratified Ensemble）：</strong>融合多样化工具增强轨迹与大模型内生医学先验，显著降低复杂临床决策中的幻觉率与单路径偏差。</li>
+              <li><strong>211 项生物医学工具协同编排：</strong>深度打通 <code>PubMed</code>、<code>OpenFDA</code>、<code>ChEMBL</code> 与 <code>ClinicalTrials.gov</code> 等权威数据库，实现药物靶点、不良反应与临床指南的闭环核验。</li>
+            </ul>
+          </div>
+          <div class="pillar-tags">
+            <span>Executor-Analyst</span>
+            <span>CURE-Bench #2</span>
+            <span>PubMed / OpenFDA / ChEMBL</span>
+            <span>Context Pruning</span>
+          </div>
+        </article>
+
+        <!-- Pillar 2: Real-Time Full-Duplex Conversational Agents -->
+        <article class="pillar-card">
+          <div class="pillar-number">02</div>
+          <h3 class="pillar-title">
+            <span data-lang="en">Real-Time Full-Duplex Conversational Agents</span>
+            <span data-lang="zh">实时全双工对话智能体与主动话轮转换</span>
+          </h3>
+          <div class="pillar-body" data-lang="en">
+            <p>
+              Formalizing <strong>proactive turn-taking strictly at Transition Relevance Places (TRPs, &plusmn;200 ms)</strong> under the Principle of Deliberate Silence. We replace brittle silence timers with the <strong>Three-Factor Multiplicative Utility Model</strong>:
+            </p>
+            <div class="math-formula-box" aria-label="U(t) = A(t) times S(t) times N(t)">
+              <code>U(t) = A(t) &times; S(t) &times; N(t)</code>
+            </div>
+            <ul class="pillar-list">
+              <li><strong>Multiplicative Veto &amp; Three-Question Validity Filter:</strong> Unifies acoustic-syntactic TRP probability <code>A(t)</code>, semantic grounding &amp; voiceprint confidence <code>S(t)</code>, and Gricean net utility <code>N(t)</code> gated by <em>New Information (Q<sub>1</sub>)</em>, <em>Immediate Need (Q<sub>2</sub>)</em>, and <em>Timeliness Superiority (Q<sub>3</sub>)</em> (&gt;96.67% neutral state space defaults to silence).</li>
+              <li><strong>Full-Duplex Runtime State Machines:</strong> Hysteresis VAD segmentation, L2-normalized speaker voiceprint crosstalk veto, and zero-loss pre-roll user barge-in frame replay (60 ms detection).</li>
+            </ul>
+          </div>
+          <div class="pillar-body" data-lang="zh">
+            <p>
+              在“蓄意沉默原则（Principle of Deliberate Silence）”下形式化建模<strong>话轮转换关联点（TRP, &plusmn;200 ms）的主动话轮接管机制</strong>。针对传统固定静音阈值（VAD）“要么迟钝、要么打断思考停顿”的交互困境，提出<strong>三因子乘性效用模型</strong>：
+            </p>
+            <div class="math-formula-box" aria-label="U(t) = A(t) times S(t) times N(t)">
+              <code>U(t) = A(t) &times; S(t) &times; N(t)</code>
+            </div>
+            <ul class="pillar-list">
+              <li><strong>乘性一票否决与三问有效性过滤器：</strong>耦合声学-句法完成度 <code>A(t)</code>、语义锚定与声纹置信度 <code>S(t)</code> 以及受格赖斯准则（<em>新信息 Q<sub>1</sub>、即时需求 Q<sub>2</sub>、时机优越性 Q<sub>3</sub></em>）门控的净发言效用 <code>N(t)</code>，在中性先验下使 96.67% 状态空间默认保持安静。</li>
+              <li><strong>全双工零丢失打断状态机：</strong>融合迟滞双阈值 VAD、非注册说话人声纹一票否决及 60 ms 零丢字预卷（Pre-roll）帧回放机制。</li>
+            </ul>
+          </div>
+          <div class="pillar-tags">
+            <span>Transition Relevance Place (TRP)</span>
+            <span>U(t) = A(t)&times;S(t)&times;N(t)</span>
+            <span>Hysteresis VAD</span>
+            <span>Zero-Loss Barge-In</span>
+          </div>
+        </article>
+
+        <!-- Pillar 3: Embodied AI & Humanoid Robotics Sim-to-Real Harness -->
+        <article class="pillar-card">
+          <div class="pillar-number">03</div>
+          <h3 class="pillar-title">
+            <span data-lang="en">Embodied AI &amp; Humanoid Robotics Sim-to-Real Harness</span>
+            <span data-lang="zh">具身智能与人形机器人 Sim-to-Real 确定性评测线束</span>
+          </h3>
+          <div class="pillar-body" data-lang="en">
+            <p>
+              Bridging multi-simulator reinforcement learning (Isaac Gym / MuJoCo) and physical humanoid deployment on <strong>Unitree G1</strong> through automotive-grade deterministic verification pipelines and hardware-in-the-loop safety gates.
+            </p>
+            <ul class="pillar-list">
+              <li><strong>Four-Layer Blameless Postmortem Attribution:</strong> Reconstructing timestamped failure timelines across <em>(1) Simulation Environment</em>, <em>(2) Interface Protocol</em>, <em>(3) Hardware Safety</em>, and <em>(4) Policy/Model Generalization</em> to isolate root causes from contributing factors.</li>
+              <li><strong>Disturbance-Resilient Locomotion &amp; Safety Gates:</strong> Rapid baseline-to-expert policy distillation with real-time joint torque/thermal telemetry and millisecond-level emergency disengagement on physical humanoid platforms.</li>
+            </ul>
+          </div>
+          <div class="pillar-body" data-lang="zh">
+            <p>
+              将车规级“比特级 I/O 校验与节点隔离 SOP”引入具身智能领域，打通多仿真器强化学习（Isaac Gym / MuJoCo）到 <strong>Unitree G1（宇树 G1）</strong>人形机器人真机部署的确定性评测线束与硬件在环安全门控。
+            </p>
+            <ul class="pillar-list">
+              <li><strong>四层无责事故复盘归因（4-Layer Blameless Postmortem）：</strong>基于严格时间戳日志重建“仿真 &rarr; 接口 &rarr; 真机”事件链，将异常精准归因于<strong>仿真环境、接口协议、硬件安全、模型策略</strong>四个正交层级。</li>
+              <li><strong>抗扰动全身运动控制与安全门：</strong>实现从基线控制到技能专家网络的高效蒸馏，在真机上完成站立平衡、连续步态、外力推搡恢复及跌倒自恢复，并配备毫秒级急停与黑匣子回放保护。</li>
+            </ul>
+          </div>
+          <div class="pillar-tags">
+            <span>Unitree G1</span>
+            <span>Sim-to-Real Harness</span>
+            <span>4-Layer Attribution</span>
+            <span>Hardware Safety Gates</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Selected Publications & Honors Section -->
+    <section class="section-block" id="publications">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span data-lang="en">Selected Publications &amp; Honors</span>
+          <span data-lang="zh">代表性学术论文与国际竞赛荣誉 (Publications &amp; Honors)</span>
+        </h2>
+        <p class="section-subtitle">
+          <span data-lang="en">Peer-reviewed competition benchmarks, preprints, and technical manuscripts with reproducible code and canonical citations.</span>
+          <span data-lang="zh">附带完整 DOI、arXiv 预印本编号、开源代码及一键 BibTeX 引用的代表性研究成果。</span>
+        </p>
+      </div>
+
+      <!-- Featured Honor Banner -->
+      <div class="honor-spotlight-card">
+        <div class="honor-trophy" aria-hidden="true">🏆</div>
+        <div class="honor-content">
+          <div class="honor-meta">NeurIPS 2025 Competition Track &middot; CURE-Bench Track 2</div>
+          <h3 class="honor-headline">
+            <span data-lang="en">2nd Place Winner in CURE-Bench Track 2 at NeurIPS 2025</span>
+            <span data-lang="zh">NeurIPS 2025 CURE-Bench 国际临床推理基准竞赛 Track 2 全球第 2 名（亚军）</span>
+          </h3>
+          <p class="honor-desc">
+            <span data-lang="en">Awarded for <strong>CureAgent</strong>, demonstrating superior multi-step clinical reasoning accuracy and robustness across 211 heterogeneous biomedical tools without task-specific fine-tuning.</span>
+            <span data-lang="zh">凭借免训练多智能体框架 <strong>CureAgent</strong> 在 211 个异构生物医学工具与复杂临床治疗决策基准上取得优异的准确率与泛化鲁棒性，荣获 NeurIPS 2025 CURE-Bench Track 2 第二名。</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="publications-list">
+        <!-- Publication 1: CureAgent -->
+        <article class="pub-card featured-pub" id="pub-cureagent">
+          <div class="pub-badge-column">
+            <span class="pub-venue-badge badge-neurips">NeurIPS 2025</span>
+            <span class="pub-rank-badge">Track 2 &middot; #2</span>
+            <span class="pub-year-badge">arXiv 2025</span>
+          </div>
+
+          <div class="pub-main-column">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener noreferrer">
+                CureAgent: A Training-Free Executor-Analyst Framework for Clinical Reasoning
+              </a>
+            </h3>
+
+            <div class="pub-authors">
+              <span class="author-item">Ting-Ting Xie</span>,
+              <span class="author-item author-self">Yixin Zhang (张益新)</span>
+            </div>
+
+            <div class="pub-venue-line">
+              <span data-lang="en"><em>arXiv preprint</em> <code>arXiv:2512.05576</code> &middot; DOI: <code>10.48550/arXiv.2512.05576</code> &middot; <strong>2nd Place in CURE-Bench Track 2 at NeurIPS 2025</strong></span>
+              <span data-lang="zh"><em>arXiv 预印本</em> <code>arXiv:2512.05576</code> &middot; DOI: <code>10.48550/arXiv.2512.05576</code> &middot; <strong>NeurIPS 2025 CURE-Bench Track 2 全球亚军方案</strong></span>
+            </div>
+
+            <div class="pub-summary">
+              <p data-lang="en">
+                <strong>Summary:</strong> Clinical decision-making requires synthesizing rapidly evolving biomedical literature, regulatory labels, and molecular databases. Existing monolithic tool-use agents degrade severely when orchestrating hundreds of biomedical APIs due to long-context attention drift (&gt;12k tokens) and brittle multi-step chains. <strong>CureAgent</strong> introduces a training-free <em>Executor-Analyst</em> framework that isolates low-level API execution (across 211 biomedical tools spanning PubMed, OpenFDA, ChEMBL, and ClinicalTrials.gov) from high-level clinical evidence synthesis, coupled with a stratified ensemble strategy that unifies tool-augmented and parametric reasoning pathways.
+              </p>
+              <p data-lang="zh">
+                <strong>核心摘要：</strong>临床治疗决策需要跨海量生物医学文献、FDA 药品监管标签与分子活性数据库进行多步证据综合。传统单体智能体在面对数百个工具 Schema 时极易因超长上下文（&gt;12k tokens）产生注意力漂移与工具调用退化。<strong>CureAgent</strong> 提出了一种免训练的<em>执行器-分析器（Executor-Analyst）</em>解耦架构，将针对 211 个生物医学工具（涵盖 PubMed、OpenFDA、ChEMBL、ClinicalTrials.gov）的底层原子调用与高层临床推理严格分离，并结合分层多智能体集成策略（Stratified Ensemble），在 NeurIPS 2025 CURE-Bench 竞赛中斩获 Track 2 第二名。
+              </p>
+            </div>
+
+            <!-- Action Buttons Row -->
+            <div class="pub-actions">
+              <a href="https://arxiv.org/pdf/2512.05576.pdf" target="_blank" rel="noopener noreferrer" class="pub-btn btn-primary">
+                [PDF]
+              </a>
+              <a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener noreferrer" class="pub-btn">
+                [arXiv]
+              </a>
+              <a href="https://doi.org/10.48550/arXiv.2512.05576" target="_blank" rel="noopener noreferrer" class="pub-btn">
+                [DOI]
+              </a>
+              <a href="https://www.semanticscholar.org/author/Yixin-Zhang/2397424547" target="_blank" rel="noopener noreferrer" class="pub-btn">
+                [Semantic Scholar]
+              </a>
+              <a href="https://huggingface.co/papers/2512.05576" target="_blank" rel="noopener noreferrer" class="pub-btn">
+                [Hugging Face Paper]
+              </a>
+              <a href="https://github.com/June01/CureAgent" target="_blank" rel="noopener noreferrer" class="pub-btn">
+                [Code]
+              </a>
+              <button type="button" class="pub-btn btn-bibtex" data-bibtex-key="xie2025cureagent">
+                [BibTeX]
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Publication 2: Proactive Turn-Taking Working Paper -->
+        <article class="pub-card" id="pub-turntaking">
+          <div class="pub-badge-column">
+            <span class="pub-venue-badge badge-preprint">Preprint 2026</span>
+            <span class="pub-year-badge">Voice Agents</span>
+          </div>
+
+          <div class="pub-main-column">
+            <h3 class="pub-title">
+              <a href="#bench-turntaking">
+                Proactive Turn-Taking at Transition Relevance Places for Real-Time Conversational Agents
+              </a>
+            </h3>
+
+            <div class="pub-authors">
+              <span class="author-item author-self">Yixin Zhang (张益新)</span>
+            </div>
+
+            <div class="pub-venue-line">
+              <span data-lang="en"><em>Technical Manuscript &amp; Full-Duplex Benchmark Suite</em>, Yuansiwujie, 2026</span>
+              <span data-lang="zh"><em>技术预印本与全双工评测基准套件</em>，元思无界 (Yuansiwujie)，2026</span>
+            </div>
+
+            <div class="pub-summary">
+              <p data-lang="en">
+                <strong>Summary:</strong> Formalizes proactive floor claiming strictly around Transition Relevance Places (&plusmn;200 ms) via the Three-Factor Multiplicative Utility Model (<code>U(t) = A(t) &times; S(t) &times; N(t)</code>) and the Gricean Three-Question Validity Filter. Evaluated on 200 multi-turn task-oriented dialogues (480 intra-turn thinking pauses, 600 TRPs) integrated with the <code>qwen-voice-agent</code> full-duplex runtime, achieving 200 ms turn-taking latency, 0.0% False Interruption Rate (FIR), and 0.0% Noise/Filler Ratio (NFR).
+              </p>
+              <p data-lang="zh">
+                <strong>核心摘要：</strong>针对实时语音智能体在“被动迟钝”与“盲目抢话”之间的两难困境，形式化提出了话轮转换关联点（TRP, &plusmn;200 ms）的三因子乘性效用模型（<code>U(t) = A(t) &times; S(t) &times; N(t)</code>）与格赖斯三问有效性过滤器。结合全双工运行时工作台 <code>qwen-voice-agent</code>，在包含 200 段多轮任务对话（480 个思考停顿、600 个 TRP）的基准测试中实现了 200 ms 人类级响应延迟、0.0% 误打断率（FIR）与 0.0% 废话填充率（NFR）。
+              </p>
+            </div>
+
+            <div class="pub-actions">
+              <a href="#bench-turntaking" class="pub-btn">
+                <span data-lang="en">[Benchmark &amp; Specs]</span>
+                <span data-lang="zh">[基准详情与指标]</span>
+              </a>
+              <button type="button" class="pub-btn btn-bibtex" data-bibtex-key="zhang2026proactive">
+                [BibTeX]
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Open-Source Benchmarks & Research Artifacts Section -->
+    <section class="section-block" id="benchmarks">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span data-lang="en">Open-Source Benchmarks &amp; Research Artifacts</span>
+          <span data-lang="zh">开源评测基准与科研工程套件 (Benchmarks &amp; Artifacts)</span>
+        </h2>
+        <p class="section-subtitle">
+          <span data-lang="en">Reproducible evaluation harnesses, full-duplex state machines, and four-layer robotics diagnostic toolkits.</span>
+          <span data-lang="zh">面向可复现智能体评测、实时语音全双工状态机与具身机器人真机故障诊断的开源研究资产。</span>
+        </p>
+      </div>
+
+      <div class="artifacts-grid">
+        <!-- Artifact 1: Full-Duplex Proactive Turn-Taking Evaluation Suite & Workbench -->
+        <article class="artifact-card" id="bench-turntaking">
+          <div class="artifact-header">
+            <div class="artifact-type-badge">
+              <span data-lang="en">Benchmark &amp; Runtime Workbench</span>
+              <span data-lang="zh">评测基准与全双工运行时工作台</span>
+            </div>
+            <h3 class="artifact-title">
+              <span data-lang="en">Full-Duplex Proactive Turn-Taking Evaluation Suite &amp; Workbench</span>
+              <span data-lang="zh">全双工主动话轮转换评测套件与运行时工作台 (200-Dialogue Benchmark + <code>qwen-voice-agent</code>)</span>
+            </h3>
+          </div>
+
+          <div class="artifact-body">
+            <p data-lang="en">
+              A reproducible benchmark and pure-NumPy 24/7 full-duplex conversational runtime integrating mathematical TRP modeling (<code>U(t) = A(t) &times; S(t) &times; N(t)</code>) with deterministic audio state machines:
+            </p>
+            <p data-lang="zh">
+              将 TRP 三因子乘性决策引擎（<code>U(t) = A(t) &times; S(t) &times; N(t)</code>）与纯 NumPy 7&times;24 小时全双工语音运行时 <code>qwen-voice-agent</code> 深度集成的评测套件：
+            </p>
+
+            <div class="metrics-strip">
+              <div class="metric-box">
+                <span class="metric-val">200</span>
+                <span class="metric-lbl" data-lang="en">Task Dialogues (480 Pauses / 600 TRPs)</span>
+                <span class="metric-lbl" data-lang="zh">多轮任务对话 (480 思考停顿 / 600 TRP)</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">0.0%</span>
+                <span class="metric-lbl" data-lang="en">False Interruption &amp; Filler Rate</span>
+                <span class="metric-lbl" data-lang="zh">误打断率 (FIR) 与废话率 (NFR)</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">200 ms</span>
+                <span class="metric-lbl" data-lang="en">Turn-Taking Latency (60 ms Barge-In)</span>
+                <span class="metric-lbl" data-lang="zh">话轮接管延迟 (60 ms 零丢字打断)</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">96.67%</span>
+                <span class="metric-lbl" data-lang="en">Deliberate Silence Volume (&theta;=0.50)</span>
+                <span class="metric-lbl" data-lang="zh">中性先验蓄意沉默空间占比</span>
+              </div>
+            </div>
+
+            <ul class="artifact-features" data-lang="en">
+              <li><strong>Hysteresis VAD &amp; Voiceprint Crosstalk Veto:</strong> Dual-threshold energy/prosody state machine paired with L2-normalized speaker verification (<code>S(t) = 0</code> for unenrolled background speakers).</li>
+              <li><strong>Zero-Loss Barge-In Frame Replay:</strong> Non-blocking worker cancellation within 3 frames (60 ms) with pre-roll circular buffer replay so user interruptions never clip initial syllables.</li>
+              <li><strong>Five-Tier Cognitive Memory Hierarchy:</strong> Strict 600-character context budget management (peaking at 563 chars) preventing long-horizon latency growth.</li>
+            </ul>
+
+            <ul class="artifact-features" data-lang="zh">
+              <li><strong>迟滞双阈值 VAD 与声纹串音否决：</strong>结合双阈值声学状态机与 L2 归一化注册说话人声纹校验，对非目标说话人自动触发 <code>S(t) = 0</code> 乘性否决。</li>
+              <li><strong>零丢失预卷打断回放（Pre-roll Barge-In Replay）：</strong>3 帧（60 ms）内完成异步推理中断并拼接环形缓冲区前缀音频帧，彻底消除用户打断时的首音节截断。</li>
+              <li><strong>五层认知记忆架构：</strong>在严格的 600 字符预算内（实测峰值 563 字符）动态调度短期对话与长期任务状态，保障全天候恒定低延迟。</li>
+            </ul>
+          </div>
+
+          <div class="artifact-footer">
+            <a href="https://github.com/June01" target="_blank" rel="noopener noreferrer" class="pub-btn">
+              [GitHub @June01]
+            </a>
+            <button type="button" class="pub-btn btn-bibtex" data-bibtex-key="zhang2026proactive">
+              [BibTeX]
+            </button>
+          </div>
+        </article>
+
+        <!-- Artifact 2: Humanoid Robotics Sim-to-Real Incident Postmortem & Deterministic Harness Framework -->
+        <article class="artifact-card" id="bench-robotics">
+          <div class="artifact-header">
+            <div class="artifact-type-badge">
+              <span data-lang="en">Embodied AI Diagnostic &amp; Eval Harness</span>
+              <span data-lang="zh">具身智能确定性评测与四层无责复盘框架</span>
+            </div>
+            <h3 class="artifact-title">
+              <span data-lang="en">Humanoid Robotics Sim-to-Real Incident Postmortem &amp; Deterministic Harness Framework</span>
+              <span data-lang="zh">人形机器人 Sim-to-Real 事故四层无责归因与确定性评测线束框架 (Unitree G1)</span>
+            </h3>
+          </div>
+
+          <div class="artifact-body">
+            <p data-lang="en">
+              A standardized engineering harness and blameless diagnostic protocol governing the <strong>Simulation (Isaac Gym / MuJoCo) &rarr; Interface Protocol &rarr; Physical Humanoid (Unitree G1)</strong> deployment pipeline:
+            </p>
+            <p data-lang="zh">
+              面向 <strong>Isaac Gym / MuJoCo 仿真 &rarr; 接口协议联调 &rarr; Unitree G1 真机部署</strong>全流程的确定性评测线束与无责（Blameless）事故复盘规范：
+            </p>
+
+            <div class="metrics-strip">
+              <div class="metric-box">
+                <span class="metric-val">4-Layer</span>
+                <span class="metric-lbl" data-lang="en">Orthogonal Failure Attribution</span>
+                <span class="metric-lbl" data-lang="zh">四层正交故障归因分类学</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">3 Days</span>
+                <span class="metric-lbl" data-lang="en">Agile Skill-Expert Distillation</span>
+                <span class="metric-lbl" data-lang="zh">基线控制到专家策略敏捷蒸馏</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">&gt;50%</span>
+                <span class="metric-lbl" data-lang="en">Physical Robot Task Success</span>
+                <span class="metric-lbl" data-lang="zh">Unitree G1 真机闭环执行成功率</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-val">Bit-Level</span>
+                <span class="metric-lbl" data-lang="en">Deterministic Replay &amp; Safety Gate</span>
+                <span class="metric-lbl" data-lang="zh">确定性日志回放与硬件急停安全门</span>
+              </div>
+            </div>
+
+            <ul class="artifact-features" data-lang="en">
+              <li><strong>Layer 1 — Simulation Environment:</strong> Audits contact dynamics, friction/terrain domain randomization gaps, and IMU sensor noise discrepancies between MuJoCo/Isaac Gym and physical hardware.</li>
+              <li><strong>Layer 2 — Interface Protocol:</strong> Verifies PD control loop frequency jitter, coordinate frame conventions, joint indexing, and unit scaling across middleware boundaries.</li>
+              <li><strong>Layer 3 — Hardware Safety Gates:</strong> Enforces real-time joint position/torque limits, thermal spike protection, packet-loss watchdogs, and millisecond-level emergency stop interception.</li>
+              <li><strong>Layer 4 — Model Policy &amp; OOD States:</strong> Isolates out-of-distribution observation drift, action bound saturation, and reward shaping artifacts during external push recovery and fall-getup transitions.</li>
+            </ul>
+
+            <ul class="artifact-features" data-lang="zh">
+              <li><strong>第一层（仿真环境层）：</strong>核查接触动力学、地面摩擦域随机化缺口以及仿真器（Isaac Gym / MuJoCo）与真机 IMU 传感器噪声分布差异。</li>
+              <li><strong>第二层（接口协议层）：</strong>校验 PD 控制频率抖动、坐标系变换、关节序号映射与跨中间件消息单位一致性。</li>
+              <li><strong>第三层（硬件安全层）：</strong>执行关节限位、过流/温升监控、通信丢包看门狗与毫秒级人工/自动安全门急停拦截。</li>
+              <li><strong>第四层（模型策略层）：</strong>定位分布外（OOD）观测状态漂移、动作输出饱和及外力推搡恢复/跌倒起身过程中的奖励塑形偏差。</li>
+            </ul>
+          </div>
+
+          <div class="artifact-footer">
+            <a href="https://github.com/June01" target="_blank" rel="noopener noreferrer" class="pub-btn">
+              [GitHub @June01]
+            </a>
+            <button type="button" class="pub-btn btn-bibtex" data-bibtex-key="zhang2026robotics">
+              [BibTeX]
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Canonical Academic Identity & Name Disambiguation Table -->
+    <section class="section-block" id="identity">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span data-lang="en">Verified Academic Identity &amp; Name Disambiguation</span>
+          <span data-lang="zh">学术身份唯一标识与同名消歧声明 (Identity &amp; Disambiguation)</span>
+        </h2>
+        <p class="section-subtitle">
+          <span data-lang="en">Canonical persistent identifiers linking all publications, preprints, and open-source artifacts authored by Yixin Zhang (张益新).</span>
+          <span data-lang="zh">用于检索系统、审稿系统（OpenReview）与引文索引库的权威唯一标识符对照表。</span>
+        </p>
+      </div>
+
+      <div class="table-responsive">
+        <table class="identity-table">
+          <thead>
+            <tr>
+              <th>
+                <span data-lang="en">Platform / Identifier</span>
+                <span data-lang="zh">平台 / 标识符类型</span>
+              </th>
+              <th>
+                <span data-lang="en">Canonical Value / Handle</span>
+                <span data-lang="zh">标准认证值 / 唯一账号</span>
+              </th>
+              <th>
+                <span data-lang="en">Verification &amp; Direct Link</span>
+                <span data-lang="zh">官方核验直达链接</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Published Name</strong></td>
+              <td><code>Yixin Zhang</code> / <code>张益新</code> (Aliases: <code>June01</code>, <code>updatezhang</code>, <code>update0909</code>)</td>
+              <td>
+                <span data-lang="en">Primary Researcher Name</span>
+                <span data-lang="zh">标准学术署名</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Affiliation &amp; Role</strong></td>
+              <td>
+                <span data-lang="en">Research Scientist at Yuansiwujie &middot; Google Developer Expert (Machine Learning)</span>
+                <span data-lang="zh">元思无界 (Yuansiwujie) 研究科学家 &middot; Google 机器学习开发者专家 (ML GDE)</span>
+              </td>
+              <td>Beijing, China</td>
+            </tr>
+            <tr>
+              <td><strong>ORCID iD</strong></td>
+              <td><code>0009-0004-7641-4450</code></td>
+              <td><a href="https://orcid.org/0009-0004-7641-4450" target="_blank" rel="noopener noreferrer">orcid.org/0009-0004-7641-4450 &nearr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Semantic Scholar</strong></td>
+              <td>Author ID: <code>2397424547</code></td>
+              <td><a href="https://www.semanticscholar.org/author/Yixin-Zhang/2397424547" target="_blank" rel="noopener noreferrer">semanticscholar.org/author/Yixin-Zhang/2397424547 &nearr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>arXiv &amp; DataCite DOI</strong></td>
+              <td><code>arXiv:2512.05576</code> &middot; <code>10.48550/arXiv.2512.05576</code></td>
+              <td><a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener noreferrer">arxiv.org/abs/2512.05576 &nearr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Hugging Face</strong></td>
+              <td><code>@update0909</code> &middot; Paper: <code>papers/2512.05576</code></td>
+              <td>
+                <a href="https://huggingface.co/update0909" target="_blank" rel="noopener noreferrer">huggingface.co/update0909 &nearr;</a> &middot;
+                <a href="https://huggingface.co/papers/2512.05576" target="_blank" rel="noopener noreferrer">Paper Page &nearr;</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>GitHub</strong></td>
+              <td><code>@June01</code> (CureAgent &amp; Research) &middot; <code>@zyxcambridge</code></td>
+              <td><a href="https://github.com/June01" target="_blank" rel="noopener noreferrer">github.com/June01 &nearr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Google Developer Expert</strong></td>
+              <td>Machine Learning GDE (<code>@updatezhang</code>)</td>
+              <td><a href="https://g.dev/updatezhang" target="_blank" rel="noopener noreferrer">g.dev/updatezhang &nearr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Correspondence Email</strong></td>
+              <td><code>zyxcambridge@gmail.com</code></td>
+              <td><a href="mailto:zyxcambridge@gmail.com">mailto:zyxcambridge@gmail.com</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>
+          &copy; 2026 <strong>Yixin Zhang (张益新)</strong> &middot;
+          <span data-lang="en">Research Scientist at Yuansiwujie &middot; Google Developer Expert (ML)</span>
+          <span data-lang="zh">元思无界 (Yuansiwujie) 研究科学家 &middot; Google 机器学习开发者专家</span>
+        </p>
+        <p class="footer-sub">
+          <span data-lang="en">Built with an <code>al-folio</code> / <code>academicpages</code> inspired static architecture. Ready for GitHub Pages deployment.</span>
+          <span data-lang="zh">基于 <code>al-folio</code> / <code>academicpages</code> 学术规范构建，支持中英双语即时切换与 GitHub Pages 静态部署。</span>
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="https://orcid.org/0009-0004-7641-4450" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://www.semanticscholar.org/author/Yixin-Zhang/2397424547" target="_blank" rel="noopener">Semantic Scholar</a>
+        <a href="https://huggingface.co/update0909" target="_blank" rel="noopener">Hugging Face</a>
+        <a href="https://arxiv.org/abs/2512.05576" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://github.com/June01" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://g.dev/updatezhang" target="_blank" rel="noopener">GDE</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive BibTeX Modal -->
+  <div class="modal-backdrop" id="bibtex-modal" role="dialog" aria-modal="true" aria-labelledby="bibtex-modal-title" hidden>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bibtex-modal-title">
+          <span data-lang="en">Canonical BibTeX Citation</span>
+          <span data-lang="zh">标准 BibTeX 引用条目</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre class="bibtex-code-block"><code id="bibtex-modal-code"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="pub-btn btn-primary" id="copy-bibtex-btn">
+          <span data-lang="en">Copy to Clipboard</span>
+          <span data-lang="zh">复制 BibTeX</span>
+        </button>
+        <a href="citations.bib" download="Yixin_Zhang_Citations.bib" class="pub-btn">
+          <span data-lang="en">Download citations.bib</span>
+          <span data-lang="zh">下载 .bib 文件</span>
+        </a>
+        <button type="button" class="pub-btn" id="modal-cancel-btn">
+          <span data-lang="en">Close</span>
+          <span data-lang="zh">关闭</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
