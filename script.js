@@ -20,20 +20,33 @@
   url       = {https://arxiv.org/abs/2512.05576},
   note      = {2nd Place Winner in CURE-Bench Competition Track 2 at NeurIPS 2025}
 }`,
-    zhang2026proactive: `@techreport{zhang2026proactive,
-  title       = {Proactive Turn-Taking at Transition Relevance Places for Real-Time Conversational Agents},
-  author      = {Zhang, Yixin},
-  institution = {Yuansiwujie},
-  year        = {2026},
-  note        = {Full-Duplex Proactive Turn-Taking Evaluation Suite \\& qwen-voice-agent Runtime Workbench},
-  url         = {https://github.com/June01}
+    zhang2025selfevolving: `@book{zhang2025selfevolving,
+  title     = {Self-Evolving Intelligent Agents (自进化智能体)},
+  author    = {Zhang, Yixin},
+  publisher = {Publishing House of Electronics Industry (电子工业出版社)},
+  year      = {2025},
+  isbn      = {978-7-121-51835-5},
+  url       = {https://isbnsearch.org/isbn/9787121518355}
 }`,
-    zhang2026robotics: `@misc{zhang2026robotics,
-  title        = {Humanoid Robotics Sim-to-Real Incident Postmortem and Deterministic Evaluation Harness Framework},
-  author       = {Zhang, Yixin},
-  year         = {2026},
-  howpublished = {Open-Source Embodied AI Engineering Specification (Unitree G1 Sim-to-Real Pipeline)},
-  url          = {https://github.com/June01}
+    zhang2026proactive: `@software{zhang2026proactive,
+  title     = {Proactive-Turn-Taking-Bench-200: A Full-Duplex Conversational Turn-Taking \\& Interruption Benchmark and State-Machine Evaluation Suite},
+  author    = {Zhang, Yixin},
+  year      = {2026},
+  month     = {oct},
+  publisher = {Zenodo},
+  version   = {1.0.0},
+  doi       = {10.5281/zenodo.23605760},
+  url       = {https://doi.org/10.5281/zenodo.23605760}
+}`,
+    zhang2026robotics: `@software{zhang2026robotics,
+  title     = {Embodied Sim2Real Harness: A Four-Layer Root-Cause Attribution \\& Telemetry Evaluation Suite for Humanoid Robotics (Unitree G1)},
+  author    = {Zhang, Yixin},
+  year      = {2026},
+  month     = {oct},
+  publisher = {Zenodo},
+  version   = {1.0.0},
+  doi       = {10.5281/zenodo.23605772},
+  url       = {https://doi.org/10.5281/zenodo.23605772}
 }`
   };
 
