@@ -6,7 +6,7 @@
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-%40update0909-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/update0909)
 [![GDE](https://img.shields.io/badge/Google_Developer_Expert-Machine_Learning-4285F4?style=flat-square&logo=google&logoColor=white)](https://g.dev/updatezhang)
 
-This repository contains the zero-build, publication-grade bilingual (**English + 中文**) academic &amp; industrial-translation personal homepage for **Yixin Zhang (张益新)**, Research Scientist at **Yuansiwujie (UniBo DISI)**, Founder &amp; Chief Architect of **TrustAgent Systems**, and **Google Developer Expert (Machine Learning)**.
+This repository contains the zero-build, publication-grade bilingual (**English + 中文**) academic &amp; industrial-translation personal homepage for **Yixin Zhang (张益新)**, Affiliated Researcher at **Alma Mater Studiorum - Università di Bologna (DISI)**, Chief Architect of **TrustAgent Systems**, and **Google Developer Expert (Machine Learning)**.
 
 ---
 
