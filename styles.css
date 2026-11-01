@@ -1138,6 +1138,75 @@ html[data-theme="dark"] .icon-moon {
 }
 
 /* ==========================================================================
+   Industrial Translation & 60-90 Day OEM Turnkey Section (#transfer)
+   ========================================================================== */
+.action-pill-secondary {
+  margin-top: 0.55rem;
+  background-color: var(--bg-accent-soft);
+  border-color: rgba(59, 130, 246, 0.35);
+  color: var(--accent-primary);
+}
+
+.transfer-spotlight-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--accent-primary);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+}
+
+.transfer-kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.35rem;
+}
+
+.transfer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.transfer-track-card {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.35rem;
+}
+
+.transfer-track-title {
+  font-size: 1.12rem;
+  margin-bottom: 0.75rem;
+}
+
+.transfer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.badge-openreview .badge-icon {
+  background-color: #8c1b13;
+  color: #ffffff;
+}
+
+.modal-dialog-wide {
+  max-width: 780px;
+}
+
+#turnkey-modal-code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 68vh;
+  overflow-y: auto;
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 920px) {
@@ -1145,11 +1214,13 @@ html[data-theme="dark"] .icon-moon {
     grid-template-columns: 1fr;
   }
 
-  .pillars-grid {
+  .pillars-grid,
+  .transfer-grid {
     grid-template-columns: 1fr;
   }
 
-  .metrics-strip {
+  .metrics-strip,
+  .transfer-kpi-strip {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1170,11 +1241,30 @@ html[data-theme="dark"] .icon-moon {
     width: auto;
   }
 
-  .metrics-strip {
+  .metrics-strip,
+  .transfer-kpi-strip {
     grid-template-columns: 1fr;
   }
 
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.65rem;
+    padding-bottom: 0.35rem;
+  }
+
   .nav-links {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.85rem;
+    flex: 1;
+    min-width: 0;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links::-webkit-scrollbar {
     display: none;
   }
 }
